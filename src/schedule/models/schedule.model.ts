@@ -9,7 +9,7 @@ export class Schedule {
 	id: number;
 
 	@Prop({ require: true })
-	type: Date;
+	bookingDate: Date;
 }
 
 export const ScheduleSchema = SchemaFactory.createForClass(Schedule);
