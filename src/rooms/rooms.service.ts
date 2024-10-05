@@ -18,10 +18,10 @@ export class RoomsService {
 	}
 
 	async updateById(id: number) {
-		return this.roomsModel.updateOne({ id });
+		this.roomsModel.updateOne({ id });
 	}
 
 	async deleteById(id: number) {
-		return this.roomsModel.deleteOne({ id });
+		this.roomsModel.deleteOne({ id });
 	}
 }
